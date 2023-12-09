@@ -10,7 +10,7 @@ $mobile-sm-middle: 500;
 $mobile-sm: 420;
 
 // ***** colors *****
-$primary-color: rgb(0, 226, 142);
+$primary-color: rgb(39, 119, 133);
 $secondary-color: #271e34;
 $transparent-black: rgba(0, 0, 0, 0.1);
 $transparent-white: rgba(255, 255, 255, 0.1);
@@ -26,9 +26,9 @@ $transparent-white: rgba(255, 255, 255, 0.1);
   --io-background: #222331;
 
 
-  --tui-primary: #00e28d;
-  --tui-primary-hover: #02b774;
-  --tui-primary-active: #02b774;
+  --tui-primary:rgb(39, 119, 133);
+  --tui-primary-hover:rgb(39, 119, 133);
+  --tui-primary-active:rgb(39, 119, 133);
   --tui-primary-text: #14141d;
 
   --tui-secondary: #3b3d4f;
