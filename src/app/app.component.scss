@@ -8,6 +8,15 @@
   }
 }
 
+.header-text {         
+  margin-top: 15px;
+  margin-bottom: 5px;
+  color: #fff;
+  font-weight: 700;
+  font-size: 30px;
+  text-align: center;    
+}
+
 .wrapper {
   display: flex;
   flex-direction: column;
@@ -52,7 +61,15 @@
     padding: 0 var(--tui-padding-l) 60px;
   }
 
-  .footer {
-    display: none;
+ // .footer {
+ //   display: none;
+//  }
+}
+
+@include b($mobile-md) {
+  .router-outlet-wrapper {
+    border: 5px solid transparent;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 191, 255, 0.8);
   }
 }

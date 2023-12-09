@@ -85,10 +85,3 @@ jobs:
           regex: '.*$'
           flags: 'm'
         
-      - name: Notify bot
-        uses: fjogeleit/http-request-action@v1
-        with:
-          url: 'https://deploy-bot.rubic.exchange/deploy'
-          method: 'POST'
-          customHeaders: '{"Content-Type": "application/json"}'
-          data: '{"targetServer": "production", "initiator": "${{ github.actor }}", "feature": "${{steps.regex-match.outputs.match }}"}'

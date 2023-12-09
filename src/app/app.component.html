@@ -2,12 +2,15 @@
   <ng-container *ngIf="isBackendAvailable">
     <div class="wrapper">
       <app-header></app-header>
+      <div class="header-text">
+        <p>FETS DEX</p>
+      </div>
       <main class="main-content">
         <router-outlet></router-outlet>
       </main>
       <app-rubic-footer *noFrame class="footer"></app-rubic-footer>
     </div>
-    <app-live-chat></app-live-chat>
+    <!--<app-live-chat></app-live-chat>-->
   </ng-container>
 
   <ng-container ngProjectAs="tuiOverDialogs">
