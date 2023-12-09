@@ -1,0 +1,58 @@
+@use 'src/scss/core' as *;
+
+::ng-deep {
+  app-my-trades,
+  app-buy-crypto {
+    display: block;
+    width: 100%;
+  }
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+
+  > :first-child {
+    flex: 0;
+  }
+
+  > :nth-child(2) {
+    flex: 1;
+    align-self: stretch;
+  }
+
+  > :last-child {
+    flex: 0;
+  }
+}
+
+.main-content {
+  width: 100%;
+  padding: 0 20px 60px;
+
+  @include hide-unused-ui {
+    margin: 0;
+    padding: 0;
+  }
+
+  ::ng-deep {
+    > * {
+      margin: 0 auto;
+
+      @include b($mobile-md) {
+        margin: 0 auto 40px;
+      }
+    }
+  }
+}
+
+@include b($mobile-md) {
+  .main-content {
+    padding: 0 var(--tui-padding-l) 60px;
+  }
+
+  .footer {
+    display: none;
+  }
+}

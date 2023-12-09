@@ -1,0 +1,53 @@
+@use 'src/scss/core' as *;
+
+.rubic-header {
+  position: relative;
+
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  padding: 30px;
+
+  &__logo {
+    display: block;
+    margin-right: 40px;
+
+    img {
+      display: block;
+    }
+  }
+}
+
+.staking-button {
+  margin-right: auto;
+}
+
+.image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 100%;
+}
+
+@include b($mobile-md) {
+  .rubic-header {
+    justify-content: space-between;
+    padding: var(--tui-radius-m) var(--tui-radius-l);
+  }
+
+  app-rubic-menu-toggler,
+  app-points-button,
+  app-language-selector,
+  app-history-button {
+    display: none;
+  }
+
+  button {
+    &.theme-switcher,
+    &.swap-button,
+    &.staking-button {
+      display: none;
+    }
+  }
+}

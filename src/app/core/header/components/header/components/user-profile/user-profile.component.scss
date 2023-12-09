@@ -1,0 +1,67 @@
+@use 'src/scss/core' as *;
+
+.data-list {
+  --tui-data-list-padding: 5px;
+  --tui-data-list-margin: 0px;
+
+  &__element:not(:last-child) {
+    margin-bottom: 5px;
+  }
+
+  &__link-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+  }
+}
+
+.user-profile {
+  &__chain-icon {
+    width: 24px;
+    margin-right: 10px;
+
+    img {
+      display: block;
+      height: auto;
+
+      border-radius: 50%;
+    }
+  }
+
+  &__address {
+    margin-right: 10px;
+  }
+
+  &__logout {
+    color: var(--tui-negative);
+  }
+}
+
+.notification-counter {
+  position: absolute;
+
+  &_profile {
+    top: 0;
+    right: 35px;
+  }
+
+  &_menu {
+    top: 0;
+    right: 0;
+  }
+}
+
+.arrow {
+  ::ng-deep svg path {
+    fill: var(--tui-text-01);
+  }
+}
+
+@include b($mobile-md) {
+  ::ng-deep {
+    tui-hosted-dropdown .tui-group .t-wrapper {
+      padding: 0 var(--tui-padding-l) !important;
+    }
+  }
+}

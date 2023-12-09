@@ -1,0 +1,9 @@
+<button
+  class="button-container"
+  (click)="copyToClipboard()"
+  inlineSVG="assets/images/icons/copy.svg"
+  [tuiHint]="tooltip"
+  [tuiHintManual]="hintShown"
+></button>
+
+<ng-template #tooltip> Copied! </ng-template>

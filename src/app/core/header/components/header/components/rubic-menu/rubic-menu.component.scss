@@ -1,0 +1,79 @@
+@use 'src/scss/core' as *;
+
+:host {
+  --tui-data-list-padding: 5px;
+}
+
+::ng-deep {
+  tui-accordion {
+    tui-accordion-item {
+      .t-wrapper {
+        background: transparent !important;
+
+        .t-header {
+          background: transparent !important;
+        }
+      }
+
+      tui-expand {
+        .t-content {
+          padding: 0 !important;
+
+          .t-wrapper {
+            border-bottom: 1px solid var(--tui-base-04);
+            border-radius: 0;
+
+            :last-child {
+              border-bottom: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.image {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+
+  ::ng-deep svg {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.data-list {
+  --tui-data-list-padding: 5px;
+  --tui-data-list-margin: 0px;
+
+  &__element {
+    text-decoration: none;
+
+    &:not(:last-child) {
+      margin-bottom: 5px;
+    }
+  }
+
+  &__element-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+  }
+}
+
+.image {
+  width: 24px;
+  height: 24px;
+
+  ::ng-deep svg {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+a {
+  display: flex;
+}

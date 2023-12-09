@@ -1,0 +1,68 @@
+<ng-container
+  *ngLet="{
+    isDarkTheme: isDarkTheme$ | async,
+    deposits: deposits$ | async,
+    depositsLoading: depositsLoading$ | async
+  } as depositsInfo"
+>
+  <app-window-container class="deposits fade-in" *ngIf="depositsInfo.deposits?.length">
+    <div class="deposits__head">
+      <div class="deposits__title">
+        <span class="deposits__title-text">{{ 'staking.deposits.title' | translate }}</span>
+        <app-rotating-icon
+          [rotating]="depositsInfo.depositsLoading"
+          (iconClick)="refreshDeposits()"
+        ></app-rotating-icon>
+      </div>
+      <button
+        class="deposits__head-btn"
+        tuiButton
+        type="button"
+        size="m"
+        appearance="primary"
+        (click)="navigateToStakeForm()"
+      >
+        {{ 'staking.deposits.newPosition' | translate }}
+      </button>
+    </div>
+
+    <div class="deposits__body">
+      <tui-loader
+        class="inline-flex"
+        [showLoader]="depositsInfo.depositsLoading"
+        [inheritColor]="true"
+        [overlay]="true"
+      >
+        <ng-container *ngIf="depositsInfo.deposits.length">
+          <app-desktop-deposits
+            *ngIf="!isMobile; else mobileDeposits"
+            [deposits]="depositsInfo.deposits"
+            [total]="total$ | async"
+            [claimingId]="claimingId$ | async"
+            [withdrawingId]="withdrawingId$ | async"
+            [isDarkTheme]="depositsInfo.isDarkTheme"
+            (onClaim)="startClaim($event)"
+            (onWithdraw)="startWithdraw($event)"
+          ></app-desktop-deposits>
+        </ng-container>
+      </tui-loader>
+      <ng-template #mobileDeposits>
+        <app-mobile-deposits
+          [deposits]="depositsInfo.deposits"
+          [total]="total$ | async"
+          [claimingId]="claimingId$ | async"
+          [withdrawingId]="withdrawingId$ | async"
+          [isDarkTheme]="depositsInfo.isDarkTheme"
+          (onClaim)="startClaim($event)"
+          (onWithdraw)="startWithdraw($event)"
+        ></app-mobile-deposits>
+      </ng-template>
+    </div>
+  </app-window-container>
+
+  <ng-template #noDeposits>
+    <div class="no-deposits">
+      <span class="no-deposits__text">You have no deposits.</span>
+    </div>
+  </ng-template>
+</ng-container>

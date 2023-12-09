@@ -1,0 +1,14 @@
+@use 'src/scss/vars' as *;
+@use 'src/scss/mixins';
+
+:host {
+  display: block;
+}
+
+.button-container {
+  position: relative;
+
+  &:active {
+    transform: scale(0.95);
+  }
+}
