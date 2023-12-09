@@ -189,7 +189,7 @@ a {
   align-items: center;
   justify-content: center;
 
-  background-color: #282935;
+  background-color: #000000;
   opacity: 1;
 
   transition: opacity 0.4s ease-in-out, z-index 0.4s step-end;
@@ -233,7 +233,7 @@ a {
 
 html.dark {
   [id^='tui-hint_price-impact'] {
-    background: rgb(56, 56, 56) !important;
+    background: rgb(0, 0, 0) !important;
   }
 }
 

@@ -21,7 +21,7 @@ $transparent-white: rgba(255, 255, 255, 0.1);
   --app-background: #282935;
   --primary-background: var(--tui-base-01);
   --secondary-background: var(--tui-secondary);
-  --dropdpwn-background: rgba(60, 61, 68, 0.85);
+  --dropdpwn-background: rgba(0, 0, 0, 0.85);
 
   --io-background: #222331;
 
@@ -120,7 +120,7 @@ $red-hat-display: Red-Hat-Display, sans-serif;
 
 // ***** colors *****
 $rubic-base-11: #808080;
-$rubic-primary: #4aa956;
+$rubic-primary: rgb(39, 119, 133);
 $rubic-disable: #e1e1e1;
 $rubic-warning: #dfcb5f;
 
@@ -157,3 +157,12 @@ $rubic-font-size-02: 18px;
 
 // ***** themes *****
 $dark: 'dark';
+
+body {
+  background: url('../assets/bg.jpg') center center no-repeat fixed;
+  background-size: cover;
+
+  &.default-iframe-background {
+    background: linear-gradient(45deg, black, var(--primary-color)) !important;
+  }}
+  
