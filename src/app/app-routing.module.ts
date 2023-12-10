@@ -34,7 +34,7 @@ const routes: Routes = [
   },
   {
     path: ROUTE_PATH.REST,
-    redirectTo: '/?fromChain=ETH&toChain=ETH&from=FETS&to='
+    redirectTo: '/'
   }
 ];
 
