@@ -30,17 +30,17 @@
   height: 100%;
 }
 
-//.exception {
-  //display: none;
+.exception {
+  display: none;
 
- // @include b($mobile-md) {
-    //position: absolute;
-   // top: 30px;
-   // right: 0;
+  @include b($mobile-md) {
+    position: absolute;
+    top: 30px;
+    right: 0;
 
-   // display: block; // Add this line to make it visible on mobile
- // }
-//}
+   display: block; // Add this line to make it visible on mobile
+ }
+}
 
 @include b($mobile-md) {
   .rubic-header {
