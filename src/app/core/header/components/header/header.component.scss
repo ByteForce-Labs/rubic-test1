@@ -51,13 +51,10 @@
   app-rubic-menu-toggler,
   app-points-button,
   app-language-selector,
-  app-history-button {
+  app-history-button,app-login-button {
     display: none;
   }
 
-  &__login{
-    display: none;
-  }
 
   button {
     &.theme-switcher,
