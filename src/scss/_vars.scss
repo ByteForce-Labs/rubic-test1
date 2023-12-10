@@ -17,22 +17,21 @@ $transparent-white: rgba(255, 255, 255, 0.1);
 
 
 body {
-  
+  background: url('../assets/bg.jpg') center center no-repeat fixed;
   background-size: cover;
 
   &.default-iframe-background {
     background: linear-gradient(45deg, black, var(--primary-color)) !important;
   }}
-  
 
 // ***** vars *****
 :root {
-  --app-background: url('../assets/bg.jpg') center center no-repeat fixed;
+  --app-background: #000000;
   --primary-background: var(--tui-base-01);
   --secondary-background: var(--tui-secondary);
   --dropdpwn-background: rgba(0, 0, 0, 0.85);
 
-  --io-background: #222331;
+  --io-background: #000000;
 
 
   --tui-primary:rgb(39, 119, 133);
@@ -167,3 +166,4 @@ $rubic-font-size-02: 18px;
 // ***** themes *****
 $dark: 'dark';
 
+  
