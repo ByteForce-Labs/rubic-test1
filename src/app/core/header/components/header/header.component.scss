@@ -55,23 +55,7 @@
     display: none;
   }
 
-  &__menu {
-    display: inline-flex;
-    margin-right: auto;
-  }
-
-  &__profile-user {
-    display: block;
-
-    transform: scale(0.9);
-  }
-
-  &__login,
-  &__settings,
-  &__menu,
-  &__logo_hide {
-    display: none;
-  }
+  
 
   button {
     &.theme-switcher,
