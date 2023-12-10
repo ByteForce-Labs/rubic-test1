@@ -55,7 +55,9 @@
     }
   }
 }
-
+app-live-chat{
+  display: none;
+}
 @include b($mobile-md) {
   .main-content {
     padding: 0 var(--tui-padding-l) 60px;
@@ -81,5 +83,9 @@
     font-weight: 700;
     font-size: 30px;
     text-align: center;    
+  }
+
+  app-live-chat{
+    display: block;
   }
 }
