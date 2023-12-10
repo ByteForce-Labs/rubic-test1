@@ -33,9 +33,9 @@ $transparent-white: rgba(0, 0, 0, 0.692);
   --tui-primary-active:rgb(39, 119, 133);
   --tui-primary-text: #14141d;
 
-  --tui-secondary: rgba(255, 255, 255, 0.1);
-  --tui-secondary-hover: rgba(255, 255, 255, 0.05);
-  --tui-secondary-active: rgba(255, 255, 255, 0.05);
+  --tui-secondary: rgba(0, 0, 0, 0.5);
+  --tui-secondary-hover: rgba(0, 0, 0, 0.5);
+  --tui-secondary-active: rgba(0, 0, 0, 0.5);
 
 
   --tui-elevation-01: var(--tui-secondary);
