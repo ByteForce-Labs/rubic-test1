@@ -55,7 +55,9 @@
     display: none;
   }
 
-  
+  &__login{
+    display: none;
+  }
 
   button {
     &.theme-switcher,
