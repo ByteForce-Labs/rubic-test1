@@ -37,7 +37,7 @@
 }
 
 .main-content {
-  width: 80%;
+  width: 100%;
   padding: 0 20px 60px;
 
   @include hide-unused-ui {
@@ -81,5 +81,10 @@
     font-weight: 700;
     font-size: 30px;
     text-align: center;    
+  }
+
+  router-outlet{
+    width: 80%;
+    margin: auto;
   }
 }

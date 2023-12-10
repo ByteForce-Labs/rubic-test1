@@ -35,7 +35,7 @@
 
   @include b($mobile-md) {
     position: absolute;
-    top: 0;
+    top: 5px;
     right: 0;
 
     display: block; // Add this line to make it visible on mobile
@@ -44,14 +44,15 @@
 
 @include b($mobile-md) {
   .rubic-header {
-    justify-content: space-between;
+    display: flex;
     padding: var(--tui-radius-m) var(--tui-radius-l);
+    margin-right: 10px;
   }
 
   app-rubic-menu-toggler,
   app-points-button,
   app-language-selector,
-  app-history-button, {
+  app-history-button {
     display: none;
   }
 
