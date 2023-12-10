@@ -3,13 +3,16 @@
     <div class="wrapper">
       <app-header></app-header>
       <main class="main-content">
+        <div class="header-text">
+          <p>FETS DEX</p>
+        </div>
         <div class="router-outlet-wrapper">
-        <router-outlet></router-outlet>
-      </div>
+          <router-outlet></router-outlet>
+        </div>
       </main>
       <app-rubic-footer *noFrame class="footer"></app-rubic-footer>
     </div>
-    <!--<app-live-chat></app-live-chat>-->
+    <app-live-chat></app-live-chat>
   </ng-container>
 
   <ng-container ngProjectAs="tuiOverDialogs">
