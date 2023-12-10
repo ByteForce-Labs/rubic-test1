@@ -20,12 +20,12 @@ $transparent-white: rgba(255, 255, 255, 0.1);
 
 // ***** vars *****
 :root {
-  --app-background: #000000;
+  --app-background: rgb(24, 26, 27);
   --primary-background: var(--tui-base-01);
   --secondary-background: var(--tui-secondary);
-  --dropdpwn-background: rgba(0, 0, 0, 0.85);
+  --dropdpwn-background:  rgb(24, 26, 27);
 
-  --io-background: #000000;
+  --io-background:  rgb(24, 26, 27);
 
 
   --tui-primary:rgb(39, 119, 133);
