@@ -16,13 +16,7 @@ $transparent-black: rgba(0, 0, 0, 0.1);
 $transparent-white: rgba(255, 255, 255, 0.1);
 
 
-body {
-  background: url('../assets/bg.jpg') center center no-repeat fixed;
-  background-size: cover;
 
-  &.default-iframe-background {
-    background: linear-gradient(45deg, black, var(--primary-color)) !important;
-  }}
 
 // ***** vars *****
 :root {
@@ -39,9 +33,10 @@ body {
   --tui-primary-active:rgb(39, 119, 133);
   --tui-primary-text: #14141d;
 
-  --tui-secondary: #3b3d4f;
-  --tui-secondary-hover: #4c4e67;
-  --tui-secondary-active: #4c4e67;
+  --tui-secondary: rgba(255, 255, 255, 0.1);
+  --tui-secondary-hover: rgba(255, 255, 255, 0.05);
+  --tui-secondary-active: rgba(255, 255, 255, 0.05);
+
 
   --tui-elevation-01: var(--tui-secondary);
   --tui-elevation-02: var(--tui-secondary);
@@ -50,8 +45,8 @@ body {
   --tui-link: white;
   --tui-link-hover: white;
 
-  --tui-base-01: #2c2d3e;
-  --tui-base-02: #2c2d3e;
+  --tui-base-01: #181a19;
+  --tui-base-02: init;
   --tui-base-03: #2c2d3e;
   --tui-base-04: #4d4d59;
 
