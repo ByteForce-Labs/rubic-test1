@@ -34,7 +34,7 @@
   display: none;
 
   @include b($mobile-md) {
-    position: absolute;
+    //position: absolute;
     top: 30px;
     right: 0;
 

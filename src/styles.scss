@@ -37,14 +37,15 @@ html {
   height: auto !important;
   overflow-x: hidden;
 
-  &.iframe {
+  &.iframe
+   {
     width: 400px;
   }
 
   body {
     position: relative;
 
-    min-width: 310px;
+    min-width: 300px;
     height: auto;
     margin: 0;
     padding: 0;
