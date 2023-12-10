@@ -104,6 +104,11 @@ export const MOBILE_NAVIGATION_LIST: { [key in Section]: NavigationItem[] } = {
   ],
   ['More']: [
     {
+      translateKey: 'Home',
+      type: 'external',
+      link: 'https://www.fetech.org/'
+    },
+    {
       translateKey: 'Chart',
       type: 'external',
       link: 'https://www.dextools.io/app/en/ether/pair-explorer/0x5a424aba0e5400d90eb88abaa790fefed54c62c7'
@@ -139,16 +144,6 @@ export const MOBILE_NAVIGATION_LIST: { [key in Section]: NavigationItem[] } = {
       translateKey: 'Discord',
       type: 'external',
       link: 'https://discord.com/invite/UvMnZtUWvY'
-    },
-    {
-      translateKey: 'Coinmarketcap',
-      type: 'external',
-      link: 'https://coinmarketcap.com/currencies/fets'
-    },
-    {
-      translateKey: 'Coingecko',
-      type: 'external',
-      link: 'https://www.geckoterminal.com/eth/pools/0x5a424aba0e5400d90eb88abaa790fefed54c62c7?utm_source=coingecko&utm_medium=referral&utm_campaign=searchresults'
     }
   ],
 };

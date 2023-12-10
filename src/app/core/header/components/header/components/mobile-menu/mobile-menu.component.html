@@ -13,7 +13,7 @@
   </button>
   <ng-container *ngIf="!(currentUser$ | async)?.address; else loggedIn">
     <button class="native-mobile-menu__item" (click)="openWallet()">
-      <span [inlineSVG]="'assets/images/icons/mobile-menu/wallet-butt.svg'"></span>
+      <span [inlineSVG]="'assets/images/icons/mobile-menu/wallet-button.svg'"></span>
     </button>
   </ng-container>
   <ng-template #loggedIn>
