@@ -9,7 +9,7 @@
     [noFrameLink]="noFrameLink"
   ></app-logo>
 
-  <app-rubic-menu-toggler class="rubic-header__menu">
+  <app-rubic-menu-toggler *noFrame class="exception">
     <app-rubic-menu
       [swapActive]="rootPath && (swapType$ | async) === SWAP_PROVIDER_TYPE.INSTANT_TRADE"
       [crossChainActive]="
@@ -61,7 +61,7 @@
   <!--    <div routerLink="/revoke-approval">Revoke Approval</div>-->
   <!--  </button>-->
 
-  <ng-container>
+  <!--<ng-container>
     <app-points-button
       class="rubic-header__point-button"
       *ngIf="currentUser$ | async"
@@ -82,11 +82,11 @@
         (isDarkTheme$ | async) ? '/assets/images/icons/day.svg' : '/assets/images/icons/night.svg'
       "
     ></div>
-  </button>
+  </button>-->
 
-  <app-language-selector></app-language-selector>
+  <!--<app-language-selector></app-language-selector>-->
 
-  <app-history-button></app-history-button>
+  <!--<app-history-button></app-history-button>-->
 
   <div class="rubic-header__profile">
     <ng-container *ngIf="!(currentUser$ | async)?.address; else loggedIn">
