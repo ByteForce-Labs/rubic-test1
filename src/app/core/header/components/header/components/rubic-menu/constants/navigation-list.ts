@@ -3,7 +3,7 @@ import { EXTERNAL_LINKS, ROUTE_PATH } from '@shared/constants/common/links';
 
 const defaultSrc = 'assets/images/icons/navigation/';
 
-type Section = 'Trade'  | 'Social';
+type Section = 'Trade' | 'More' | 'Social';
 
 export const NAVIGATION_LIST = [
   {
@@ -95,6 +95,28 @@ export const MOBILE_NAVIGATION_LIST: { [key in Section]: NavigationItem[] } = {
       link: ROUTE_PATH.CHANGENOW_RECENT_TRADES,
       active: false
     }*/
+  ],
+  ['More']: [
+    {
+      translateKey: 'Chart',
+      type: 'external',
+      link: 'https://www.dextools.io/app/en/ether/pair-explorer/0x5a424aba0e5400d90eb88abaa790fefed54c62c7'
+    },
+    {
+      translateKey: 'Get Fets',
+      type: 'external',
+      link: 'https://www.dextools.io/app/en/ether/pair-explorer/0x5a424aba0e5400d90eb88abaa790fefed54c62c7'
+    },
+    {
+      translateKey: 'Coinmarketcap',
+      type: 'external',
+      link: 'https://coinmarketcap.com/currencies/fets'
+    },
+    {
+      translateKey: 'Coingecko',
+      type: 'external',
+      link: 'https://www.geckoterminal.com/eth/pools/0x5a424aba0e5400d90eb88abaa790fefed54c62c7?utm_source=coingecko&utm_medium=referral&utm_campaign=searchresults'
+    }
   ],
   ['Social']: [
     {
