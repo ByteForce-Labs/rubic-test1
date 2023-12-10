@@ -59,6 +59,12 @@ export const MOBILE_NAVIGATION_LIST: { [key in Section]: NavigationItem[] } = {
       link: ROUTE_PATH.NONE,
       active: false
     },
+    {
+      translateKey: 'Revoke Approval',
+      type: 'internal',
+      link: ROUTE_PATH.REVOKE_APPROVAL,
+      active: false
+    }
     /*{
       translateKey: 'Staking',
       type: 'internal',

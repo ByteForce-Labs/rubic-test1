@@ -30,7 +30,7 @@
   height: 100%;
 }
 
-.exception {
+/*.exception {
   display: none;
 
   @include b($mobile-md) {
@@ -40,11 +40,11 @@
 
    display: block; // Add this line to make it visible on mobile
  }
-}
+}*/
 
 @include b($mobile-md) {
   .rubic-header {
-    display: flex;
+    justify-content: space-between;
     padding: var(--tui-radius-m) var(--tui-radius-l);
     margin-right: 10px;
   }
