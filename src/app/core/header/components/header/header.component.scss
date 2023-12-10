@@ -60,7 +60,8 @@
   button {
     &.theme-switcher,
     &.swap-button,
-    &.staking-button {
+    &.staking-button,
+    &.revoke-button {
       display: none;
     }
   }

@@ -6,14 +6,14 @@
     <span [inlineSVG]="'assets/images/icons/mobile-menu/chat-button.svg'"></span>
   </button>-->
   <button class="native-mobile-menu__item" (click)="openNavigationMenu()">
-    <span [inlineSVG]="'assets/images/icons/mobile-menu/swap.png'"></span>
+    <span [inlineSVG]="'assets/images/icons/mobile-menu/swap.svg'"></span>
   </button>
   <button class="native-mobile-menu__item" (click)="openSettings()">
     <span [inlineSVG]="'assets/images/icons/mobile-menu/settings-button.svg'"></span>
   </button>
   <ng-container *ngIf="!(currentUser$ | async)?.address; else loggedIn">
     <button class="native-mobile-menu__item" (click)="openWallet()">
-      <span [inlineSVG]="'assets/images/icons/mobile-menu/wallet-button.png'"></span>
+      <span [inlineSVG]="'assets/images/icons/mobile-menu/wallet-butt.svg'"></span>
     </button>
   </ng-container>
   <ng-template #loggedIn>
