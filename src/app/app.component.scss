@@ -9,7 +9,7 @@
 }
 
 .header-text {         
-  margin-top: 15px;
+  margin-top: 5px;
   margin-bottom: 5px;
   color: #fff;
   font-weight: 700;
@@ -59,7 +59,7 @@
 @include b($mobile-md) {
   .main-content {
     padding: 0 var(--tui-padding-l) 60px;
-    
+
   }
 
  // .footer {
@@ -72,5 +72,14 @@
     border: 5px solid transparent;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 191, 255, 0.8);
+  }
+
+  .header-text {         
+    margin-top: 15px;
+    margin-bottom: 5px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 30px;
+    text-align: center;    
   }
 }
