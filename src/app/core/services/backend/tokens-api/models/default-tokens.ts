@@ -29,11 +29,11 @@ export const defaultTokens: Record<BlockchainName, Token[]> = {
     } as Token,
     {
       blockchain: BLOCKCHAIN_NAME.ETHEREUM,
-      address: '0x3330BFb7332cA23cd071631837dC289B09C33333',
-      name: 'Rubic',
-      symbol: 'RBC',
+      address: '0xf4a509313437dfc64e2efed14e2b607b1aed30c5',
+      name: 'FE TECH',
+      symbol: 'FETS',
       decimals: 18,
-      image: 'assets/images/icons/default-tokens/rbc.png',
+      image: 'assets/images/futurehouse.png',
       ...defaultTokenParams
     },
     {
