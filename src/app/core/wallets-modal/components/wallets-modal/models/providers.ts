@@ -20,7 +20,7 @@ export const PROVIDERS_LIST: ReadonlyArray<WalletProvider> = [
     display: true,
     disabled: false
   },
-  {
+  /*{
     name: 'Trust Wallet',
     value: WALLET_NAME.TRUST_WALLET,
     img: './assets/images/icons/wallets/trust.svg',
@@ -37,7 +37,7 @@ export const PROVIDERS_LIST: ReadonlyArray<WalletProvider> = [
     mobileOnly: false,
     display: true,
     disabled: false
-  },
+  },*/
   {
     name: 'WalletConnect',
     value: WALLET_NAME.WALLET_CONNECT,
