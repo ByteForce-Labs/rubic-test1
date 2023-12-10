@@ -35,7 +35,7 @@
 
   @include b($mobile-md) {
     position: absolute;
-    top: 5px;
+    top: 20px;
     right: 0;
 
     display: block; // Add this line to make it visible on mobile
