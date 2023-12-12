@@ -111,11 +111,11 @@ export class AppComponent implements AfterViewInit {
    * Inits site query params subscription.
    */
   private initQueryParamsSubscription(): Observable<void> {
-    const questionMarkIndex = this.window.location.href.indexOf('?fromChain=ETH&toChain=ETH&from=FETS');
+    const questionMarkIndex = this.window.location.href.indexOf('');
     if (questionMarkIndex === -1 || questionMarkIndex === this.window.location.href.length - 1) {
       return of(null);
     }
-  
+
     return this.activatedRoute.queryParams.pipe(
       first(queryParams => Boolean(Object.keys(queryParams).length)),
       map((queryParams: QueryParams) => {
@@ -124,21 +124,13 @@ export class AppComponent implements AfterViewInit {
           ...(queryParams?.from && { from: queryParams.from }),
           ...(queryParams?.to && { to: queryParams.to })
         });
-  
         if (queryParams.hideUnusedUI) {
           this.setupUISettings(queryParams);
-        }
-  
-        // Check for specific parameters and perform the redirection
-        if (queryParams.hideUnusedUI) {
-          const newUrl = 'https://www.fetsdex.tech/?fromChain=ETH&toChain=ETH&from=FETS'; // Set your desired redirection URL
-          this.window.location.href = newUrl;
         }
       }),
       catchError(() => of(null))
     );
   }
-  
 
   private setupUISettings(queryParams: QueryParams): void {
     const hideUI = queryParams.hideUnusedUI === 'true';
