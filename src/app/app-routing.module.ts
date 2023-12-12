@@ -33,9 +33,10 @@ const routes: Routes = [
     loadChildren: () => import('./features/history/history.module').then(m => m.HistoryModule)
   },
   {
-    path: ROUTE_PATH.REST,
-    redirectTo: '/'
-  }
+    path: 'external-url',
+    redirectTo: 'https://www.fetsdex.tech/?fromChain=ETH&toChain=ETH&from=FETS',
+    pathMatch: 'full'
+  },
 ];
 
 @NgModule({
