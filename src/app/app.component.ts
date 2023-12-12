@@ -124,9 +124,9 @@ export class AppComponent implements AfterViewInit {
           ...(queryParams?.from && { from: queryParams.from}),
           ...(queryParams?.to && { to: queryParams.to })
         });
-        if (queryParams.hideUnusedUI) {
-          this.setupUISettings(queryParams);
-        }
+        //if (queryParams.hideUnusedUI) {
+        //  this.setupUISettings(queryParams);
+        //}
       }),
       catchError(() => of(null))
     );
@@ -135,8 +135,8 @@ export class AppComponent implements AfterViewInit {
   private setupUISettings(queryParams: QueryParams): void {
     //const hideUI = queryParams.hideUnusedUI === 'true';
 
-    //if (hideUI) {
-     // this.document.body.classList.add('hide-unused-ui');
+   // if (hideUI) {
+    //  this.document.body.classList.add('hide-unused-ui');
    // }
   }
 
