@@ -119,22 +119,18 @@ export class AppComponent implements AfterViewInit {
     return this.activatedRoute.queryParams.pipe(
       first(queryParams => Boolean(Object.keys(queryParams).length)),
       map((queryParams: QueryParams) => {
-        // Set up query parameters service with received parameters
         this.queryParamsService.setupQueryParams({
           ...queryParams,
-          // Set a default value for 'from' parameter if not present
-          from: queryParams.from || 'FETS',
+          ...(queryParams?.from && { from: queryParams.from||'FETS' }),
           ...(queryParams?.to && { to: queryParams.to })
         });
-    
-        // If queryParams.hideUnusedUI is truthy, set up UI settings
         if (queryParams.hideUnusedUI) {
           this.setupUISettings(queryParams);
         }
       }),
       catchError(() => of(null))
     );
-    
+  }
 
   private setupUISettings(queryParams: QueryParams): void {
     const hideUI = queryParams.hideUnusedUI === 'true';
