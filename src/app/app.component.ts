@@ -121,7 +121,7 @@ export class AppComponent implements AfterViewInit {
       map((queryParams: QueryParams) => {
         this.queryParamsService.setupQueryParams({
           ...queryParams,
-          ...queryParams?.from && { from: queryParams.from||'FETS' },
+          ...(queryParams?.from && { from: queryParams.from}),
           ...(queryParams?.to && { to: queryParams.to })
         });
         if (queryParams.hideUnusedUI) {
@@ -133,11 +133,11 @@ export class AppComponent implements AfterViewInit {
   }
 
   private setupUISettings(queryParams: QueryParams): void {
-    const hideUI = queryParams.hideUnusedUI === 'true';
+    //const hideUI = queryParams.hideUnusedUI === 'true';
 
-    if (hideUI) {
-      this.document.body.classList.add('hide-unused-ui');
-    }
+    //if (hideUI) {
+     // this.document.body.classList.add('hide-unused-ui');
+   // }
   }
 
   /**
