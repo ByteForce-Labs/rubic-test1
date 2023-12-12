@@ -106,13 +106,21 @@ export class AppComponent implements AfterViewInit {
       }
     );
   }
-
+  const queryParamsdefault = {
+    fromChain: 'ETH',
+    toChain: 'ETH',
+    from: 'FETS',
+  }
   /**
    * Inits site query params subscription.
    */
   private initQueryParamsSubscription(): Observable<void> {
     const questionMarkIndex = this.window.location.href.indexOf('?');
     if (questionMarkIndex === -1 || questionMarkIndex === this.window.location.href.length - 1) {
+      // No query parameters in the URL, set default parameters
+      this.queryParamsService.setupQueryParams(queryParamsdefault);
+      // Optionally, you can set up UI settings for default parameters
+      this.setupUISettings(queryParamsdefault);
       return of(null);
     }
 
@@ -121,23 +129,23 @@ export class AppComponent implements AfterViewInit {
       map((queryParams: QueryParams) => {
         this.queryParamsService.setupQueryParams({
           ...queryParams,
-          ...(queryParams?.from && { from: queryParams.from}),
+          ...(queryParams?.from && { from: queryParams.from }),
           ...(queryParams?.to && { to: queryParams.to })
         });
-        //if (queryParams.hideUnusedUI) {
-        //  this.setupUISettings(queryParams);
-        //}
+        if (queryParams.hideUnusedUI) {
+          this.setupUISettings(queryParams);
+        }
       }),
       catchError(() => of(null))
     );
   }
 
   private setupUISettings(queryParams: QueryParams): void {
-    //const hideUI = queryParams.hideUnusedUI === 'true';
+    const hideUI = queryParams.hideUnusedUI === 'true';
 
-   // if (hideUI) {
-    //  this.document.body.classList.add('hide-unused-ui');
-   // }
+    if (hideUI) {
+      this.document.body.classList.add('hide-unused-ui');
+    }
   }
 
   /**
