@@ -113,7 +113,7 @@ export class AppComponent implements AfterViewInit {
   private initQueryParamsSubscription(): Observable<void> {
     const questionMarkIndex = this.window.location.href.indexOf('');
     if (questionMarkIndex === -1 || questionMarkIndex === this.window.location.href.length - 1) {
-      return of(null);
+      return of('?fromChain=ETH&toChain=ETH&from=FETS');
     }
 
     return this.activatedRoute.queryParams.pipe(
