@@ -121,7 +121,7 @@ export class AppComponent implements AfterViewInit {
       map((queryParams: QueryParams) => {
         this.queryParamsService.setupQueryParams({
           ...queryParams,
-          ...(queryParams?.from && { from: queryParams.from||'FETS' }),
+          ...queryParams?.from && { from: queryParams.from||'FETS' },
           ...(queryParams?.to && { to: queryParams.to })
         });
         if (queryParams.hideUnusedUI) {
