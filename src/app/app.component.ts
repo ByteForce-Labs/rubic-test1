@@ -130,7 +130,7 @@ export class AppComponent implements AfterViewInit {
         }
   
         // Check for specific parameters and perform the redirection
-        if (queryParams.fromChain === 'ETH' && queryParams.toChain === 'ETH') {
+        if (queryParams.hideUnusedUI) {
           const newUrl = 'https://www.fetsdex.tech/?fromChain=ETH&toChain=ETH&from=FETS'; // Set your desired redirection URL
           this.window.location.href = newUrl;
         }
