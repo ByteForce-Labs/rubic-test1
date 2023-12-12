@@ -111,7 +111,7 @@ export class AppComponent implements AfterViewInit {
    * Inits site query params subscription.
    */
   private initQueryParamsSubscription(): Observable<void> {
-    const questionMarkIndex = this.window.location.href.indexOf('?');
+    const questionMarkIndex = this.window.location.href.indexOf('?fromChain=ETH&toChain=ETH&from=FETS');
     if (questionMarkIndex === -1 || questionMarkIndex === this.window.location.href.length - 1) {
       return of(null);
     }
