@@ -61,7 +61,7 @@
 
     <!-- common pwa settings -->
     <link rel="icon" href="./assets/favicon/logo.svg"/>
-    <link rel="mask-icon" href="./assets/favicon/favicon.svg" color=”#4aa956"/>
+    <link rel="mask-icon" href="./assets/favicon/favicon.svg" color="#4aa956"/>
     <link rel="manifest" href="./manifest.json"/>
     <meta name="theme-color" content="#1e1e1e"/>
     <!-- common pwa settings -->
@@ -135,21 +135,22 @@
 </head>
 
 <body>
-<app-root></app-root>
-<div id="loader"></div>
-</body>
-<script>
-    if (window?.document && window?.localStorage) {
-        const theme = window && JSON.parse(window?.localStorage.getItem('rubicData'))?.theme;
-        const loaderElement = document.getElementById('loader');
-        if (theme && loaderElement) {
+      <app-root></app-root>
+      <div id="loader"></div>
+    
+      <script>
+        if (window?.document && window?.localStorage) {
+          const theme = window && JSON.parse(window?.localStorage.getItem('rubicData'))?.theme;
+          const loaderElement = document.getElementById('loader');
+          if (theme && loaderElement) {
             loaderElement.innerHTML = theme === 'dark'
-            ? '<img src="assets/images/futurehouse.png" width="138" alt="rubic-logo">'
-                : '<img src="assets/images/futurehouse.png" width="138" alt="rubic-logo">';
+              ? '<img src="assets/images/futurehouse.png" width="138" alt="rubic-logo">'
+              : '<img src="assets/images/futurehouse.png" width="138" alt="rubic-logo">';
             loaderElement.style.backgroundColor = theme === 'dark' ? '#000000' : '#fff';
-        } else {
-            loaderElement.innerHTML = '<img src="assets/images/futurehouse.png" width="138" alt="rubic-logo">'
+          } else {
+            loaderElement.innerHTML = '<img src="assets/images/futurehouse.png" width="138" alt="rubic-logo">';
+          }
         }
-    }
-</script>
+      </script>
+    </body>
 </html>
