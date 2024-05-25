@@ -111,39 +111,39 @@ export const MOBILE_NAVIGATION_LIST: { [key in Section]: NavigationItem[] } = {
     {
       translateKey: 'Chart',
       type: 'external',
-      link: 'https://www.dextools.io/app/en/ether/pair-explorer/0x5a424aba0e5400d90eb88abaa790fefed54c62c7'
+      link: 'https://www.dextools.io/app/en/ether/pair-explorer/'
     },
     {
       translateKey: 'Get Fets',
       type: 'external',
-      link: 'https://www.dextools.io/app/en/ether/pair-explorer/0x5a424aba0e5400d90eb88abaa790fefed54c62c7'
+      link: 'https://www.dextools.io/app/en/ether/pair-explorer/'
     },
     {
       translateKey: 'Coinmarketcap',
       type: 'external',
-      link: 'https://coinmarketcap.com/currencies/fets'
+      link: 'https://coinmarketcap.com/currencies/Runes'
     },
     {
       translateKey: 'Coingecko',
       type: 'external',
-      link: 'https://www.geckoterminal.com/eth/pools/0x5a424aba0e5400d90eb88abaa790fefed54c62c7?utm_source=coingecko&utm_medium=referral&utm_campaign=searchresults'
+      link: 'https://www.geckoterminal.com/eth/pools/0?utm_source=coingecko&utm_medium=referral&utm_campaign=searchresults'
     }
   ],
   ['Social']: [
     {
       translateKey: 'Twitter',
       type: 'external',
-      link: 'https://twitter.com/fetsedgetech'
+      link: 'https://twitter.com/'
     },
     {
       translateKey: 'Telegram',
       type: 'external',
-      link: 'https://t.me/FETechnologies'
+      link: 'https://t.me/'
     },
     {
       translateKey: 'Discord',
       type: 'external',
-      link: 'https://discord.com/invite/UvMnZtUWvY'
+      link: 'https://discord.com/invite/'
     }
   ],
 };
