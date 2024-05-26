@@ -23,6 +23,7 @@ $transparent-white: rgba(0, 0, 0, 0.692);
   --app-background: rgb(24, 26, 27);
   --primary-background: var(--tui-base-01);
   --secondary-background: var(--tui-secondary);
+  --tertiary-background:rgb(0,0,0);
   --dropdpwn-background:  rgb(24, 26, 27);
 
   --io-background:  rgb(24, 26, 27);
@@ -33,9 +34,9 @@ $transparent-white: rgba(0, 0, 0, 0.692);
   --tui-primary-active:rgb(0, 0, 0);;
   --tui-primary-text: #fbff00;
 
-  --tui-secondary: rgba(255, 255, 0, 0.5);
-  --tui-secondary-hover: rgba(255, 255, 0, 0.5);
-  --tui-secondary-active: rgba(255, 255, 0, 0.5);
+  --tui-secondary: rgba(255, 255, 0);
+  --tui-secondary-hover: rgba(255, 255, 0);
+  --tui-secondary-active: rgba(255, 255, 0);
 
 
   --tui-elevation-01: var(--tui-secondary);
