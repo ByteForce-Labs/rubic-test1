@@ -114,7 +114,7 @@ export const MOBILE_NAVIGATION_LIST: { [key in Section]: NavigationItem[] } = {
       link: 'https://www.dextools.io/app/en/ether/pair-explorer/'
     },
     {
-      translateKey: 'Get Fets',
+      translateKey: 'Get Runes',
       type: 'external',
       link: 'https://www.dextools.io/app/en/ether/pair-explorer/'
     },
