@@ -18,7 +18,7 @@
     bottom: 0;
 
     height: fit-content;
-    //padding-bottom: 50px; возможно придётся вернуть!
+    padding-bottom: 50px;
   }
 
   &.scrollable-content {
@@ -102,7 +102,7 @@
       width: 55px;
       height: 3px;
 
-      background: #;
+      background: #1c1d1d;
       border-radius: 20px;
     }
   }
