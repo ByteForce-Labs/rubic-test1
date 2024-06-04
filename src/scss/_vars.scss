@@ -21,7 +21,7 @@ $transparent-white: rgba(0, 0, 0, 0.692);
 
 // ***** vars *****
 :root {
-  --app-background: rgb(187, 16, 12);
+  --app-background: rgb(0, 0, 0);
   --primary-background: var(--tui-base-01);
   --secondary-background: var(--tui-secondary);
   --dropdpwn-background:  rgb(24, 26, 27);
@@ -128,7 +128,7 @@ $rubic-primary: rgb(187, 16, 12);
 $rubic-disable: #e1e1e1;
 $rubic-warning: #dfcb5f;
 
-$background-black: rgb(14, 17, 14);
+$background-black: rgb(187, 16, 12,);
 $grey-background: #f4f4f4;
 
 $buy-custom-token: #1968ff;
@@ -142,7 +142,7 @@ $border-radius-3: 100px;
 $backdrop-blur-1: blur(5px);
 
 // ***** shadows *****
-$shadow-block: inset 0 0 5px 1px rgba(0, 0, 0, 0.1);
+$shadow-block: inset 0 0 5px 1px rgba(187, 16, 12, 0.1);
 $main-shadow: 0 3px 6px rgba(black, 0.16);
 
 // ***** text colors *****
