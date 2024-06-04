@@ -33,7 +33,7 @@ export const defaultTokens: Record<BlockchainName, Token[]> = {
       name: 'FE TECH',
       symbol: 'FETS',
       decimals: 18,
-      image: 'assets/images/rune-logo.png',
+      image: 'assets/images/maga-swap.png',
       ...defaultTokenParams
     },
     {
