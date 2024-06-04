@@ -18,7 +18,7 @@
     }
 
     &._focused:not(&._pressed) {
-      border-color: #bb100c;
+      border-color: var(--primary-color);
     }
 
     &._focused::after {
