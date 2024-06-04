@@ -11,7 +11,7 @@ $mobile-sm-middle: 500;
 $mobile-sm: 420;
 
 // ***** colors *****
-$primary-color: rgb(39, 119, 133);
+$primary-color: rgb(187, 16, 12);
 $secondary-color: #271e34;
 $transparent-black: rgba(0, 0, 0, 0.1);
 $transparent-white: rgba(0, 0, 0, 0.692);
@@ -21,7 +21,7 @@ $transparent-white: rgba(0, 0, 0, 0.692);
 
 // ***** vars *****
 :root {
-  --app-background: rgb(24, 26, 27);
+  --app-background: rgb(187, 16, 12);
   --primary-background: var(--tui-base-01);
   --secondary-background: var(--tui-secondary);
   --dropdpwn-background:  rgb(24, 26, 27);
@@ -29,9 +29,9 @@ $transparent-white: rgba(0, 0, 0, 0.692);
   --io-background:  rgb(24, 26, 27);
 
 
-  --tui-primary:rgb(39, 119, 133);
-  --tui-primary-hover:rgb(39, 119, 133);
-  --tui-primary-active:rgb(39, 119, 133);
+  --tui-primary:rgb(187, 16, 12);
+  --tui-primary-hover:rgb(187, 16, 12);
+  --tui-primary-active:rgb(187, 16, 12);
   --tui-primary-text: #14141d;
 
   --tui-secondary: rgba(0, 0, 0, 0.5);
@@ -124,7 +124,7 @@ $red-hat-display: Red-Hat-Display, sans-serif;
 
 // ***** colors *****
 $rubic-base-11: #808080;
-$rubic-primary: rgb(39, 119, 133);
+$rubic-primary: rgb(187, 16, 12);
 $rubic-disable: #e1e1e1;
 $rubic-warning: #dfcb5f;
 
@@ -151,10 +151,10 @@ $rubic-text-disable: #909090;
 $rubic-text-error: #d9573f;
 
 $text-gray: #a8a8a8;
-
+//
 $text-gray-2: #878787;
 
-// ***** font-sizes *****
+// ***** font-sizes *****.
 $rubic-font-size-main: 14px;
 $rubic-font-size-01: 16px;
 $rubic-font-size-02: 18px;
