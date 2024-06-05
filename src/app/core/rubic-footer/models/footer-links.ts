@@ -5,18 +5,12 @@ export const FOOTER_LINKS: FooterLink[] = [
     dark: 'assets/images/contacts/xtwitter.png',
     light: 'assets/images/contacts/twitter_light.svg',
     altText: 'Twitter',
-    link: 'https://twitter.com/'
+    link: 'https://x.com/magachain'
   },
   {
     dark: 'assets/images/contacts/telegram.svg',
     light: 'assets/images/contacts/telegram_light.svg',
     altText: 'Telegram',
-    link: 'https://t.me/'
-  },
-  {
-    dark: 'assets/images/contacts/discord.svg',
-    light: 'assets/images/contacts/discord_light.svg',
-    altText: 'Discord',
-    link: 'https://discord.com/invite/'
+    link: 'https://t.me/magachains'
   }
 ];

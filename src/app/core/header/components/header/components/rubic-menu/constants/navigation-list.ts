@@ -133,17 +133,12 @@ export const MOBILE_NAVIGATION_LIST: { [key in Section]: NavigationItem[] } = {
     {
       translateKey: 'Twitter',
       type: 'external',
-      link: 'https://twitter.com/'
+      link: 'https://x.com/magachain'
     },
     {
       translateKey: 'Telegram',
       type: 'external',
-      link: 'https://t.me/'
-    },
-    {
-      translateKey: 'Discord',
-      type: 'external',
-      link: 'https://discord.com/invite/'
+      link: 'https://t.me/magachains'
     }
   ],
 };
